@@ -20,12 +20,39 @@ body {
   background: url(/images/bg-desktop.svg) no-repeat center center;
   background-size: cover;
   background-color: #674baf;
-  font-weight: 400; }
+  font-weight: 400;
+  padding: 4rem; }
   @media (max-width: 600px) {
     body {
       background: url(/images/bg-mobile.svg) no-repeat center center;
       background-size: cover;
       background-color: #674baf; } }
+
+header {
+  margin-bottom: 6rem; }
+
+.logo-image {
+  width: 15rem; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; }
+
+.main-heading {
+  font-family: 'Popins', sans-serif;
+  font-size: 3rem;
+  color: #fff; }
+
+.main-content {
+  display: flex; }
+
+.mockups {
+  flex: 50%; }
+
+.description {
+  flex: 50%;
+  padding: 5rem 4rem; }
 
 .attribution {
   font-size: 11px;

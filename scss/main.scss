@@ -17,6 +17,7 @@ img {
 
 //variables
 $violet: hsl(257, 40%, 49%);
+$white: #fff;
 
 //mixins
 @mixin respond-phone {
@@ -36,12 +37,45 @@ body {
   background-size: cover;
   background-color: $violet;
   font-weight: 400;
+  padding: 4rem;
 
   @include respond-phone {
     background: url(/images/bg-mobile.svg) no-repeat center center;
     background-size: cover;
     background-color: $violet;
   }
+}
+
+header {
+  margin-bottom: 6rem;
+}
+.logo-image {
+  width: 15rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-heading {
+  font-family: 'Popins', sans-serif;
+  font-size: 3rem;
+  color: $white;
+}
+
+.main-content {
+  display: flex;
+}
+
+.mockups {
+  flex: 50%;
+}
+
+.description {
+  flex: 50%;
+  padding: 5rem 4rem;
 }
 
 .attribution {
