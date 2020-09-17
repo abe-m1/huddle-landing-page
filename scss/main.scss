@@ -18,8 +18,18 @@ img {
 //variables
 $violet: hsl(257, 40%, 49%);
 
+//mixins
+@mixin respond-phone {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
+  @include respond-phone {
+    background-color: red;
+  }
 }
 
 .attribution {
