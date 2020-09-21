@@ -4,12 +4,15 @@
   "description": "![Design preview for the Huddle landing page with single introductory section](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "compile:scss": "node-sass scss/main.scss css/style.css -w"
+    "start:scss": "node-sass scss/main.scss css/style.css -w",
+    "start:server": "live-server",
+    "start": "concurrently npm:start:* "
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^5.3.0",
     "node-sass": "^4.14.1"
   }
 }
