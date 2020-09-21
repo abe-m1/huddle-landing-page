@@ -136,6 +136,7 @@ ion-icon {
   border-style: none;
   font-size: 2rem;
   color: $violet;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
 
   @include respond(phone) {
     font-size: 1.7rem;

@@ -87,7 +87,8 @@ ion-icon {
   border-radius: 100px;
   border-style: none;
   font-size: 2rem;
-  color: #674baf; }
+  color: #674baf;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5); }
   @media (max-width: 600px) {
     .button {
       font-size: 1.7rem;
