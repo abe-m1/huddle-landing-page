@@ -87,17 +87,14 @@ header {
   }
 }
 
-.social {
-  align-self: flex-end;
-
-  @include respond(phone) {
-    text-align: center;
-  }
-}
-
 ion-icon {
-  font-size: 50px;
+  font-size: 45px;
   color: #fff;
+  margin-left: 1.5rem;
+
+  &:not(:last-of-type) {
+    margin-left: 1.5rem;
+  }
 
   @include respond(phone) {
     font-size: 30px;
@@ -112,47 +109,24 @@ ion-icon {
   @include respond(phone) {
     display: block;
   }
-}
 
-.main-heading {
-  font-family: 'Popins', sans-serif;
-  font-size: 4.5rem;
-  color: $white;
-  font-weight: 700;
-
-  &:last-of-type {
-    margin-bottom: 3rem;
-  }
-
-  @include respond(phone) {
-    font-size: 2.8rem;
-    text-align: center;
-  }
-}
-
-.main-content {
-  display: flex;
-  font-size: 2.1rem;
-  color: $white;
-  font-weight: 200;
-
-  @include respond(phone) {
-    display: block;
-  }
-}
-.main-text {
-  margin-bottom: 2rem;
-
-  @include respond(phone) {
-    font-size: 1.6rem;
+  &__main-content {
+    display: flex;
+    font-size: 2.1rem;
+    color: $white;
     font-weight: 200;
-    text-align: center;
-  }
-}
 
-.button-container {
-  @include respond(phone) {
-    text-align: center;
+    @include respond(phone) {
+      display: block;
+    }
+  }
+
+  &__social {
+    align-self: flex-end;
+
+    @include respond(phone) {
+      text-align: center;
+    }
   }
 }
 
@@ -182,6 +156,38 @@ ion-icon {
     padding: 2rem;
     font-size: 2rem;
     flex: none;
+  }
+
+  &__main-heading {
+    font-family: 'Popins', sans-serif;
+    font-size: 4.5rem;
+    color: $white;
+    font-weight: 700;
+
+    &:last-of-type {
+      margin-bottom: 3rem;
+    }
+
+    @include respond(phone) {
+      font-size: 2.8rem;
+      text-align: center;
+    }
+  }
+
+  &__main-text {
+    margin-bottom: 2rem;
+
+    @include respond(phone) {
+      font-size: 1.6rem;
+      font-weight: 200;
+      text-align: center;
+    }
+  }
+
+  &__button-container {
+    @include respond(phone) {
+      text-align: center;
+    }
   }
 }
 

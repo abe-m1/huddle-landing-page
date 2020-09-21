@@ -50,15 +50,12 @@ header {
     .logo-image {
       width: 15rem; } }
 
-.social {
-  align-self: flex-end; }
-  @media (max-width: 600px) {
-    .social {
-      text-align: center; } }
-
 ion-icon {
-  font-size: 50px;
-  color: #fff; }
+  font-size: 45px;
+  color: #fff;
+  margin-left: 1.5rem; }
+  ion-icon:not(:last-of-type) {
+    margin-left: 1.5rem; }
   @media (max-width: 600px) {
     ion-icon {
       font-size: 30px;
@@ -71,39 +68,19 @@ ion-icon {
   @media (max-width: 600px) {
     .container {
       display: block; } }
-
-.main-heading {
-  font-family: 'Popins', sans-serif;
-  font-size: 4.5rem;
-  color: #fff;
-  font-weight: 700; }
-  .main-heading:last-of-type {
-    margin-bottom: 3rem; }
-  @media (max-width: 600px) {
-    .main-heading {
-      font-size: 2.8rem;
-      text-align: center; } }
-
-.main-content {
-  display: flex;
-  font-size: 2.1rem;
-  color: #fff;
-  font-weight: 200; }
-  @media (max-width: 600px) {
-    .main-content {
-      display: block; } }
-
-.main-text {
-  margin-bottom: 2rem; }
-  @media (max-width: 600px) {
-    .main-text {
-      font-size: 1.6rem;
-      font-weight: 200;
-      text-align: center; } }
-
-@media (max-width: 600px) {
-  .button-container {
-    text-align: center; } }
+  .container__main-content {
+    display: flex;
+    font-size: 2.1rem;
+    color: #fff;
+    font-weight: 200; }
+    @media (max-width: 600px) {
+      .container__main-content {
+        display: block; } }
+  .container__social {
+    align-self: flex-end; }
+    @media (max-width: 600px) {
+      .container__social {
+        text-align: center; } }
 
 .button {
   padding: 2rem 7rem;
@@ -128,6 +105,27 @@ ion-icon {
       padding: 2rem;
       font-size: 2rem;
       flex: none; } }
+  .description__main-heading {
+    font-family: 'Popins', sans-serif;
+    font-size: 4.5rem;
+    color: #fff;
+    font-weight: 700; }
+    .description__main-heading:last-of-type {
+      margin-bottom: 3rem; }
+    @media (max-width: 600px) {
+      .description__main-heading {
+        font-size: 2.8rem;
+        text-align: center; } }
+  .description__main-text {
+    margin-bottom: 2rem; }
+    @media (max-width: 600px) {
+      .description__main-text {
+        font-size: 1.6rem;
+        font-weight: 200;
+        text-align: center; } }
+  @media (max-width: 600px) {
+    .description__button-container {
+      text-align: center; } }
 
 .attribution {
   font-size: 11px;
