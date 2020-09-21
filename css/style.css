@@ -30,41 +30,92 @@ body {
   font-family: 'Open Sans', sans-serif;
   height: 100vh;
   background: url(/images/bg-desktop.svg) no-repeat center center;
-  background-size: cover;
+  background-size: contain;
   background-color: #674baf;
   font-weight: 400;
-  padding: 4rem; }
+  padding: 5rem; }
   @media (max-width: 600px) {
     body {
       background: url(/images/bg-mobile.svg) no-repeat center center;
       background-size: cover;
-      background-color: #674baf; } }
+      background-color: #674baf;
+      padding: 3rem; } }
 
 header {
   margin-bottom: 6rem; }
 
 .logo-image {
-  width: 15rem; }
+  width: 18rem; }
+  @media (max-width: 600px) {
+    .logo-image {
+      width: 15rem; } }
 
 .social {
   align-self: flex-end; }
+  @media (max-width: 600px) {
+    .social {
+      text-align: center; } }
 
 ion-icon {
   font-size: 50px;
   color: #fff; }
+  @media (max-width: 600px) {
+    ion-icon {
+      font-size: 30px;
+      margin-bottom: 2rem; } }
 
 .container {
   display: flex;
   flex-direction: column;
   height: 100vh; }
+  @media (max-width: 600px) {
+    .container {
+      display: block; } }
 
 .main-heading {
   font-family: 'Popins', sans-serif;
-  font-size: 3rem;
-  color: #fff; }
+  font-size: 4.5rem;
+  color: #fff;
+  font-weight: 700; }
+  .main-heading:last-of-type {
+    margin-bottom: 3rem; }
+  @media (max-width: 600px) {
+    .main-heading {
+      font-size: 2.8rem;
+      text-align: center; } }
 
 .main-content {
-  display: flex; }
+  display: flex;
+  font-size: 2.1rem;
+  color: #fff;
+  font-weight: 200; }
+  @media (max-width: 600px) {
+    .main-content {
+      display: block; } }
+
+.main-text {
+  margin-bottom: 2rem; }
+  @media (max-width: 600px) {
+    .main-text {
+      font-size: 1.6rem;
+      font-weight: 200;
+      text-align: center; } }
+
+@media (max-width: 600px) {
+  .button-container {
+    text-align: center; } }
+
+.button {
+  padding: 2rem 7rem;
+  border-radius: 100px;
+  border-style: none;
+  font-size: 2rem;
+  color: #674baf; }
+  @media (max-width: 600px) {
+    .button {
+      font-size: 1.7rem;
+      padding: 1.6rem 5.5rem;
+      margin-bottom: 2rem; } }
 
 .mockups {
   flex: 50%; }
@@ -72,10 +123,18 @@ ion-icon {
 .description {
   flex: 50%;
   padding: 5rem 4rem; }
+  @media (max-width: 600px) {
+    .description {
+      padding: 2rem;
+      font-size: 2rem;
+      flex: none; } }
 
 .attribution {
   font-size: 11px;
   text-align: center; }
+  @media (max-width: 600px) {
+    .attribution {
+      display: none; } }
 
 .attribution a {
   color: #3e52a3; }

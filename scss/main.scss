@@ -63,15 +63,16 @@ body {
   font-family: 'Open Sans', sans-serif;
   height: 100vh;
   background: url(/images/bg-desktop.svg) no-repeat center center;
-  background-size: cover;
+  background-size: contain;
   background-color: $violet;
   font-weight: 400;
-  padding: 4rem;
+  padding: 5rem;
 
   @include respond(phone) {
     background: url(/images/bg-mobile.svg) no-repeat center center;
     background-size: cover;
     background-color: $violet;
+    padding: 3rem;
   }
 }
 
@@ -79,31 +80,94 @@ header {
   margin-bottom: 6rem;
 }
 .logo-image {
-  width: 15rem;
+  width: 18rem;
+
+  @include respond(phone) {
+    width: 15rem;
+  }
 }
 
 .social {
   align-self: flex-end;
+
+  @include respond(phone) {
+    text-align: center;
+  }
 }
 
 ion-icon {
   font-size: 50px;
   color: #fff;
+
+  @include respond(phone) {
+    font-size: 30px;
+    margin-bottom: 2rem;
+  }
 }
 .container {
   display: flex;
   flex-direction: column;
   height: 100vh;
+
+  @include respond(phone) {
+    display: block;
+  }
 }
 
 .main-heading {
   font-family: 'Popins', sans-serif;
-  font-size: 3rem;
+  font-size: 4.5rem;
   color: $white;
+  font-weight: 700;
+
+  &:last-of-type {
+    margin-bottom: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.8rem;
+    text-align: center;
+  }
 }
 
 .main-content {
   display: flex;
+  font-size: 2.1rem;
+  color: $white;
+  font-weight: 200;
+
+  @include respond(phone) {
+    display: block;
+  }
+}
+.main-text {
+  margin-bottom: 2rem;
+
+  @include respond(phone) {
+    font-size: 1.6rem;
+    font-weight: 200;
+    text-align: center;
+  }
+}
+
+.button-container {
+  @include respond(phone) {
+    text-align: center;
+  }
+}
+
+.button {
+  padding: 2rem 7rem;
+  border-radius: 100px;
+  border-style: none;
+  font-size: 2rem;
+  color: $violet;
+
+  @include respond(phone) {
+    font-size: 1.7rem;
+    padding: 1.6rem 5.5rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .mockups {
@@ -113,11 +177,21 @@ ion-icon {
 .description {
   flex: 50%;
   padding: 5rem 4rem;
+
+  @include respond(phone) {
+    padding: 2rem;
+    font-size: 2rem;
+    flex: none;
+  }
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+
+  @include respond(phone) {
+    display: none;
+  }
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
