@@ -29,7 +29,7 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   height: 100vh;
-  background: url(/images/bg-desktop.svg) no-repeat center center;
+  background: url(/images/bg-desktop.svg) no-repeat left center;
   background-size: contain;
   background-color: #674baf;
   font-weight: 400;
@@ -108,9 +108,10 @@ ion-icon {
       flex: none; } }
   .description__main-heading {
     font-family: 'Popins', sans-serif;
-    font-size: 4.5rem;
+    font-size: 4.2rem;
     color: #fff;
-    font-weight: 700; }
+    font-weight: 700;
+    margin-bottom: 1.5rem; }
     .description__main-heading:last-of-type {
       margin-bottom: 3rem; }
     @media (max-width: 600px) {
@@ -118,7 +119,8 @@ ion-icon {
         font-size: 2.8rem;
         text-align: center; } }
   .description__main-text {
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    font-size: 2.1rem; }
     @media (max-width: 600px) {
       .description__main-text {
         font-size: 1.6rem;
